@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Custom properties */
+:root {
+    font-size: 10px;
+    --fs-1: 3.2rem;
+    --fs-2: 2.8rem;                                       /* fs = font size */
+    --fs-3: 2.6rem;
+    --fs-p: 1.5rem;
+
+    --ff1: 'Inter', sans-serif;        /* ff = font family */
+    --fw1-n: 400;                                   /* fw = font weight */
+    --fw1-b: 700;
+
+    --ff2: 'Lexend Deca', sans-serif;
+    --fw2-n: 400;
+
+    --primary-clr-vdb: hsl(233, 47%, 7%);         /* Very dark blue - main background*/
+    --primary-clr-dsb: hsl(244, 38%, 16%);        /* Dark saturated blue - card background*/
+    --primary-accent: hsl(277, 64%, 61%);         /* Soft violet - accent */
+
+    --neutral-clr-w: hsl(0, 0%, 100%);            /* Main heading, stats */
+    --neutral-clr-w2: hsla(0, 0%, 100%, 0.75);    /* Slightly transparent white - main paragraph*/
+    --neutral-clr-w3: hsla(0, 0%, 100%, 0.6);     /* Slightly transparent white - stat headings */
+}
+
+/* General syles */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* General Typography */
+h1,
+h2 {
+    color: var(--neutral-clr-w);
+    font-family: var(--ff1);
+    font-size: var(--fs-2);
+    font-weight: 700;
+}
+
+p {
+    color: var(--neutral-clr-w3);
+    font-family: var(--ff2);
+    font-size: var(--fs-p);
+    line-height: 1.9;
+}
+
+/* Backgrounds */
+body {
+    background-color: var(--primary-clr-vdb);
+}
+
+/* main {
+    font-size: 10px;                                Sets global font size
+} */
+
+/* Card */
+.stats-card {
+    background-color: var(--primary-clr-dsb);
+    min-width: 360px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+/* Hero section */
+.hero img {
+    max-width: 100%;
+}
+
+/* section .hero {
+    background: url(images/image-header-mobile.jpg);
+    background-size: cover;
+    overflow: hidden;
+} */
+/* .color-overlay {
+    width: 100%;
+    height: 100%;
+    color: var(--primary-accent);
+} */
+
+/* Text section */
+span {
+    color: var(--primary-accent);
+}
+
+#main-paragraph {
+    color: var(--neutral-clr-w2);
+}
+
+/* Stats section */
+.stats h2 {
+    font-size: var(--fs-3);
+}
+.stats p {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
