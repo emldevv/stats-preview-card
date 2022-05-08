@@ -32,6 +32,7 @@ h2,
 h3,
 p {
     margin: 0;
+    text-align: center;
 }
 
 /* General Typography */
@@ -53,18 +54,20 @@ p {
 /* Backgrounds */
 body {
     background-color: var(--primary-clr-vdb);
+    
 }
 
-/* main {
-    font-size: 10px;                                Sets global font size
-} */
+main {
+    padding: 6em 1.5em;
+}
 
 /* Card */
 .stats-card {
     background-color: var(--primary-clr-dsb);
-    min-width: 360px;
+    min-width: 330px;
     border-radius: 1em;
     overflow: hidden;
+    
 }
 
 /* Hero section */
@@ -72,40 +75,90 @@ body {
     max-width: 100%;
 }
 
-/* section .hero {
-    background: url(images/image-header-mobile.jpg);
-    background-size: cover;
-    overflow: hidden;
-} */
-/* .color-overlay {
-    width: 100%;
-    height: 100%;
-    color: var(--primary-accent);
-} */
+/* Text container */
+.container {
+    padding: 3em;
+}
 
 /* Text section */
+.text h1 {
+    margin-bottom: .8em;
+}
 span {
     color: var(--primary-accent);
 }
 
 #main-paragraph {
     color: var(--neutral-clr-w2);
+    line-height: 1.7;
+    margin-bottom: 2em;
 }
 
 /* Stats section */
 .stats h2 {
     font-size: var(--fs-3);
 }
+
 .stats p {
     text-transform: uppercase;
     font-size: 1.3rem;
+    margin-bottom: 2em;
 }
 
 /* Attribution */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: var(--neutral-clr-w2);
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 900px) {
+    main {
+        padding: 12%;
+        /* padding-left: 12em;
+        padding-right: 12em; */
+    }
+
+    .stats-card {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        min-height: 300px;
+    }
+
+    .hero {
+        min-width: 48%;
+    }
+
+    .hero img {
+        min-width: 100%;
+    }
+
+    .container {
+        min-width: 50%;
+        padding-top: 7em;
+        padding-left: 7em;
+    }
+    .text {
+        
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1, 
+    h2,
+    p {
+        text-align: left;
+    }
+
+
+    /* .hero img {
+        min-height: 100%;
+    } */
 }

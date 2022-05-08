@@ -1,0 +1,8 @@
+I am having trouble with responsiveness.
+When I reduce the width of the screen, the height of the stats-card increases whilst the hero image decreases. This causes a separation between the border of the image and the internal edge of the container.
+
+I have tried setting a minimum width and height on the container so that it cannot create a shape that exposes the edge of the image, but this is too ridgid and doesn't work anyway.
+
+My idea is to use the media query tool to create a situation where if the screens width reaches this point, the width and height of the container must be preserved and respond together to protext the image edges.
+
+This is the second time this has occurred, so I really want to solve this and log the solution, because it will probably happen regularly.
